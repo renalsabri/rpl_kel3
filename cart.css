@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0; /
+}
+
+.container {
+  flex: 1; 
+}
+
+footer {
+  background: #f8f8f8; 
+  text-align: center; 
+  padding: 10px 0; 
+}
+
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000; 
+  background-color: #7b1fa2;
+  padding: 0.5rem;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10px;
+}
+
+.upper-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 2px;
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+  margin-left: 20%; 
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-section {
+  margin-bottom: 12px;
+}
+
+.dropdown-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8a2be2;
+  margin-bottom: 8px;
+}
+
+.dropdown-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-section ul li {
+  margin-bottom: 4px;
+}
+
+.dropdown-section ul li a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dropdown-section ul li a:hover {
+  color: #8a2be2;
+  text-decoration: underline;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px; 
+  margin-right: 70px;
+  padding: 5px 8px;
+  width: 40%; 
+  max-width: 400px;
+
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #888;
+}
+
+.search-icon {
+  background: none;
+  border: none;
+  padding-right: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon .search-img {
+  width: 18px;
+  height: 18px;
+}
+
+
+.nav-icons {
+  display: flex;
+  gap: 1rem; 
+  margin-right: 13%; 
+}
+
+.nav-icon {
+  width: 1.8rem; 
+  height: 1.8rem; 
+  position: relative;
+}
+
+.nav-icon.profile {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.white-icon {
+  display: block;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.orange-icon {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-icon:hover .white-icon {
+  display: none;
+}
+
+.nav-icon:hover .orange-icon {
+  display: block;
+}
+
+.lower-nav {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem; 
+}
+
+
+.menu {
+  display: flex;
+  gap: 1.5rem; 
+}
+
+.menu-item {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.menu-item:hover {
+  color: #FFBE58;
+}
+
+
+  .container {
+    width: 100%;
+    max-width: 700px; 
+
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
+
+.header-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.action-buttons {
+    display: flex;
+   
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.button {
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+  }
+
+.delete {
+    background-color: #ef4444;
+    color: #fff;
+   }
+.delete:hover {
+    color: #ffffff;
+    background-color: #7c0000;
+
+}
+
+
+.book-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.author {
+    font-size: 14px;
+    color: #6b21a8;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+}
+
+.book-info {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.book-cover {
+    width: 90px;
+    height: 120px;
+    background-color: #e2e8f0;
+    border-radius: 5px;
+}
+
+.book-description {
+    flex-grow: 1;
+}
+
+.book-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+    margin-left: 10px;
+}
+
+.stock {
+    color: #059669;
+    font-size: 14px;
+    margin: 5px 0;
+    margin-left: 10px;
+}
+
+.price-section {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    margin-left: 10px;
+}
+
+.current-price {
+    color: #dc2626;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.original-price {
+    font-size: 14px;
+    color: #a1a1aa;
+    text-decoration: line-through;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.quantity-controls label {
+  font-size: 14px; 
+  font-weight: 600; 
+  color: #7b1fa2;
+  margin-right: 5px; 
+}
+
+.quantity-input {
+  width: 50px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; 
+}
+
+
+.quantity-button {
+    width: 30px;
+    height: 30px;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+.quantity {
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.action-buttons-2 {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.buy-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+   font-family: 'Poppins';
+    font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #7b1fa2;
+  display: flex;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.buy-btn:hover {
+  color: #7b1fa2;
+  background-color: #fbbf24;
+}
+ 
+
+footer {
+  margin-top: auto;
+  background-color: #FFBE58;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  padding: 15px 0;
+}
+
+
+footer a.privacy-policy {
+  color: #777;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a.privacy-policy:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+
